@@ -1,0 +1,27 @@
+{% extends "movies/_nav.html" %}
+{% comment %} Loading the template {% endcomment %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Favorite Movies</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    {% block content %}
+      <h1>Angel's Top Ten</h1>
+      {% load static %}
+      <img style="width:100"
+           src="{% static 'movies/angel.jpg' %}"
+           alt="About me picture">
+      <p>
+        my name is Angeles Taylor and here is a
+        list of 10 of my favorite movies of all time
+      </p>
+    {% endblock content %}
+  </body>
+</html>
